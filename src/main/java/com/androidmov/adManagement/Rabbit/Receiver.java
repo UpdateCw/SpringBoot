@@ -1,3 +1,4 @@
+/*
 package com.androidmov.adManagement.Rabbit;
 
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
@@ -14,3 +15,4 @@ public class Receiver {
     }
 
 }
+*/

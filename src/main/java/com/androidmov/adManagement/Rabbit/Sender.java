@@ -1,3 +1,4 @@
+/*
 package com.androidmov.adManagement.Rabbit;
 
 import org.springframework.amqp.core.AmqpTemplate;
@@ -18,4 +19,4 @@ public class Sender {
 		this.rabbitTemplate.convertAndSend("hello", context);
 	}
 
-}
+}*/

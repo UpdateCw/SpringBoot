@@ -1,3 +1,4 @@
+/*
 package com.androidmov.adManagement.kafka;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -14,9 +15,11 @@ import org.springframework.kafka.listener.ConcurrentMessageListenerContainer;
 import java.util.HashMap;
 import java.util.Map;
 
+*/
 /**
  * Created by cw on 2017/9/27. good day.
- */
+ *//*
+
 @Configuration
 @EnableKafka
 public class KafkaConsumerConfig {
@@ -67,4 +70,4 @@ public class KafkaConsumerConfig {
         return new Listener();
     }
 
-}
+}*/

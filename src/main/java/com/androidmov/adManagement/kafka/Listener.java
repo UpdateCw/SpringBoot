@@ -1,8 +1,11 @@
+/*
 package com.androidmov.adManagement.kafka;
 
+*/
 /**
  * Created by cw on 2017/9/27. good day.
- */
+ *//*
+
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,4 +20,4 @@ public class Listener {
         logger.info("kafka的key: " + record.key());
         logger.info("kafka的value: " + record.value().toString());
     }
-}
+}*/

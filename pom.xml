@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<!-- Your own application should inherit from spring-boot-starter-parent -->
+		<!-- Spring Boot 启动父依赖 -->
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.4.RELEASE</version>
@@ -27,7 +27,7 @@
 	</properties>
 
 	<dependencies>
-		<!-- Compile -->
+		<!-- Spring Boot web依赖 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -38,6 +38,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<!-- Spring Boot Log4j依赖 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-log4j</artifactId>
@@ -47,7 +48,7 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 		</dependency>
-		<!-- Provided -->
+		<!-- Spring Boot tomcat依赖 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
@@ -58,7 +59,7 @@
 			<artifactId>tomcat-embed-jasper</artifactId>
 			 <!--<scope>provided</scope>-->
 		</dependency>
-
+		<!-- Spring Boot Spring-data-jpa 数据依赖 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -68,13 +69,13 @@
 			<artifactId>h2</artifactId>
 			<!-- <scope>runtime</scope> -->
 		</dependency>
-		<!-- jdbc driver dependecy-->
+		<!-- Spring Boot mysql依赖 -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<!--<scope>runtime</scope>-->
 		</dependency>
-
+		<!-- Spring Boot 本地版本库 -->
 		<dependency>
 			<groupId>com.amt</groupId>
 			<artifactId>tools</artifactId>
@@ -92,7 +93,7 @@
 			<!--<version>3.5.0</version>-->
 		<!--</dependency>-->
 
-		<!-- Apache Commons -->
+		<!-- Spring Boot lang依赖 -->
 		<dependency>
     		<groupId>commons-lang</groupId>
     		<artifactId>commons-lang</artifactId>
@@ -125,7 +126,7 @@
 			<version>1.10.1</version>
 		</dependency>
 
-		<!-- Test -->
+		<!-- Spring Boot test依赖 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -135,18 +136,19 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka-server</artifactId>
 		</dependency>
-
+		<!-- Spring Boot web依赖 -->
 		<dependency>
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka</artifactId>
 			<version>1.1.1.RELEASE</version>
 		</dependency>
+		<!-- Spring Boot amqp依赖 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-amqp</artifactId>
 		</dependency>
 	</dependencies>
-
+	<!-- Spring cloud 版本依赖 -->
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -161,6 +163,7 @@
 	<build>
 		<finalName>springCloud</finalName>
 		<plugins>
+			<!-- maven依赖 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>

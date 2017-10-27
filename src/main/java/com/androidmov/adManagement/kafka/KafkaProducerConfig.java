@@ -1,3 +1,4 @@
+/*
 package com.androidmov.adManagement.kafka;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -13,9 +14,11 @@ import org.springframework.kafka.core.ProducerFactory;
 import java.util.HashMap;
 import java.util.Map;
 
+*/
 /**
  * Created by cw on 2017/9/27. good day.
- */
+ *//*
+
 @Configuration
 @EnableKafka
 public class KafkaProducerConfig {
@@ -52,4 +55,4 @@ public class KafkaProducerConfig {
     public KafkaTemplate<String, String> kafkaTemplate() {
         return new KafkaTemplate<String, String>(producerFactory());
     }
-}
+}*/
