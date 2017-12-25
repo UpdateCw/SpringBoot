@@ -1,4 +1,4 @@
-package com.androidmov.adManagement.kafka;
+package com.androidmov.adManagement.elk;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
@@ -48,6 +48,15 @@ public class KafkaProducerConfig {
         return new DefaultKafkaProducerFactory<>(producerConfigs());
     }
 
+    /**
+     * 记录日志
+     * 使用elasticsearch来存储日志信息，
+     * 为elasticsearch对接外面过来的log数据，
+     * 它对接kafka，
+     * 最后还有一个部分就是kibana，它主要用来做数据展现。
+     * @param key
+     * @param msg
+     */
     @Bean
     public KafkaTemplate<String, String> kafkaTemplate() {
         return new KafkaTemplate<String, String>(producerFactory());
